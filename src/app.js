@@ -33,7 +33,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Weather-App | Help',
         helpText: 'Some useful text',
-        name:'Kunal'
+        name: 'Kunal'
     })
 })
 
@@ -46,24 +46,24 @@ app.get('/about', (req, res) => {
 
 app.get('/weather', (req, res) => {
 
-    if(!req.query.address){
+    if (!req.query.address) {
         return res.send({
-            error: 'you must provide a address!'
+            error: 'You must provide an address!'
         })
     }
 
-    geocode(req.query.address, (error, { latitude, longitude, location }={}) => {
+    geocode(req.query.address, (error, { latitude, longitude, location } = {}) => {
 
         if (error) {
-            return res.send(error)
+            return res.send({ error })
         }
 
         forecast(latitude, longitude, (error, forecastData) => {
 
             if (error) {
-                return res.send(error)
+                return res.send({ error })
             }
-            
+
             res.send({
                 address: req.query.address,
                 location: forecastData,
@@ -73,20 +73,20 @@ app.get('/weather', (req, res) => {
     })
 })
 
-app.get('/help/*',(req, res) => {
-    res.render('404',{
+app.get('/help/*', (req, res) => {
+    res.render('404', {
         title: '404',
-        name:'Kunal',
-        errorMessage:"Help article not found"
+        name: 'Kunal',
+        errorMessage: "Help article not found"
     })
 })
 
 // * is a wild card character
 app.get('*', (req, res) => {
-    res.render('404',{
+    res.render('404', {
         title: '404',
-        name:'Kunal',
-        errorMessage:"Page not found"
+        name: 'Kunal',
+        errorMessage: "Page not found"
     })
 })
 
