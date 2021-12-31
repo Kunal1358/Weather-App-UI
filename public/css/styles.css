@@ -1,7 +1,7 @@
 body {
     color: #333333;
     font-family: arial;
-    max-width: 650px;
+    /* max-width: 650px; */
     margin: 0 auto;
     padding: 0 16px;
 
@@ -12,11 +12,12 @@ body {
 
 .main-content {
     flex-grow: 1;
+    background-color: #F8F8F8;
 }
 
 footer {
     color: #888888;
-    background-color: azure;
+    background-color: #F8F8F8;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -25,11 +26,17 @@ footer {
 header {
     margin-top: 16px;
     margin-bottom: 48px;
+
+
+
 }
 
 h1 {
     font-size: 64px;
+    border-bottom: 10px solid black;
     margin-bottom: 16px;
+    padding-bottom: 11px;
+    padding-left:11px;
 }
 
 header a {
@@ -42,6 +49,7 @@ header a {
     width: 250px;
     border-radius: 25px;
 }
+
 input {
     border: 1px solid #cccccc;
     padding: 8px;

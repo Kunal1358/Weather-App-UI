@@ -1,0 +1,123 @@
+#app-container {
+    border: 5px solid #c3cfe2;
+    max-width: 56vw;
+    margin: auto;
+    max-height: fit-content;
+    border-radius: 4px;
+
+    background: linear-gradient(#cfd9df 0%, #fdfbfb 100%);
+}
+
+#head-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+
+}
+
+#desc-main {
+    margin-right: 25px;
+}
+
+#app-header {
+    background: linear-gradient(#cfd9df 0%, #fdfbfb 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#location {
+    padding-left: 15px;
+}
+
+#app-body {
+    border-bottom: 2px solid #c3cfe2;
+    padding-bottom: 17px;
+    padding-top: 10px;
+}
+
+#app-weekly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.650);
+}
+
+#row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#row-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#mon {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 120px;
+
+    background-color: rgba(255, 255, 255, 0.185);
+    border-right: 1px solid #c3cfe2;
+}
+
+#mon-icon {
+    height: 45px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}

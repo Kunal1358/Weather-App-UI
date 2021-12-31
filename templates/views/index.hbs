@@ -6,7 +6,10 @@
 
     <title> {{title}} </title>
     <link rel="icon" href="img/weather.png">
+
+    <link rel="stylesheet" href="/css/card.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </head>
 
@@ -24,6 +27,164 @@
 
         <p id="message-1"></p>
         <p id="message-2"></p>
+
+        <div id="app-container">
+
+            <div id="app-header">
+
+                <div id="location">
+                    <p id="city-name"><img src="https://img.icons8.com/ios/50/000000/marker--v1.png" /></p>
+                </div>
+
+                <div id="head-right">
+
+                    <div id='desc-main'>
+                        <p id="weather-main"></p>
+                        <p id="weather-desc"></p>
+                    </div>
+
+                    <div id="icon-time">
+                        <p>
+                        <div id="icon"><img id="main-icon" src="https://img.icons8.com/ios/40/000000/globe--v1.png">
+                        </div>
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="app-body">
+
+                <div id="row-1">
+
+                    <p><img id="icon-1" src="https://img.icons8.com/ios/20/000000/clock--v3.png" /> <span
+                            id="time">Time</span> </p>
+                    <p> <span id="temp">Temp</span> <img
+                            src="https://img.icons8.com/ios/27/000000/temperature--v1.png" /></p>
+                </div>
+
+                <br>
+
+
+                <div id="row-2">
+                    <p> <img
+                            src="https://img.icons8.com/external-justicon-lineal-justicon/25/000000/external-humidity-weather-justicon-lineal-justicon-1.png" />
+                        <span id="app-humidity"> Humidity </span></p>
+                    <p> <span id="wind-speed">Wind speed</span> <img
+                            src="https://img.icons8.com/ios/27/000000/wind.png" /></p>
+                </div>
+
+                <br>
+
+                <div id="row-3">
+                    <p> <img src="https://img.icons8.com/dotty/36/000000/clouds.png" /> <span id="clouds">Clouds</span>
+                    </p>
+
+                    <p> <span id="visibility">Visibility</span> <img
+                            src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/32/000000/external-visibility-weather-app-inipagistudio-mixed-inipagistudio.png" />
+                    </p>
+                </div>
+                <br>
+
+                <div id="row-4">
+
+                    <p><img src="https://img.icons8.com/dotty/46/000000/sunrise.png" /> <span id="sunrise">
+                            Sunrise</span> </p>
+                    <p> <span id="sunset">Sunset</span> <img src="https://img.icons8.com/dotty/46/000000/sunset.png" />
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div id="app-weekly">
+                <div id="mon">
+                    <p id="mon-txt">Tomorrow</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-1" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-1">Temp</p>
+
+                </div>
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-2" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-2">Temp</p>
+
+                </div>
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-3" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-3">Temp</p>
+
+                </div>
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-4" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-4">Temp</p>
+
+                </div>
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-5" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-5">Temp</p>
+
+                </div>
+
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-6" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-6">Temp</p>
+
+                </div>
+
+                <div id="mon">
+                    <p id="mon-txt">Next day</p>
+                    <div id="mon-icon">
+                        <p>
+                        <div id="icon"><img id="wicon-7" src="https://img.icons8.com/ios/40/000000/globe--v1.png"></div>
+                        </p>
+                    </div>
+                    <p id="temp-7">Temp</p>
+
+                </div>
+            </div>
+        </div>
+
+        <p id="test">
+
+        </p>
 
     </div>
 
