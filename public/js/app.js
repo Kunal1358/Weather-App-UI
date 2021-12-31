@@ -48,11 +48,11 @@ weatherForm.addEventListener('submit', (e) => {
                 time.textContent = current_time.toUTCString().slice(17, 29)
                 temp.textContent = data.location.current.temp + '°C'
 
-                wind_speed.textContent = data.location.current.wind_speed +'m/sec'
+                wind_speed.textContent = data.location.current.wind_speed + 'm/sec'
                 app_humidity.textContent = data.location.current.humidity + '%'
-                
+
                 clouds.textContent = data.location.current.clouds + '%'
-                visibility.textContent = data.location.current.visibility +'m'
+                visibility.textContent = data.location.current.visibility + 'm'
 
                 const sunrise_time = new Date((data.location.current.sunrise + data.location.timezone_offset) * 1000)
                 const sunset_time = new Date((data.location.current.sunset + data.location.timezone_offset) * 1000)

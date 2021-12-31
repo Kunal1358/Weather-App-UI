@@ -5,7 +5,7 @@ const geocode = (address, callback) => {
     // encodeURIComponent(address)
     // this is to prevent code failures in case we use special characters in address
 
-    request({ url, json: true }, (error, {body}) => {
+    request({ url, json: true }, (error, { body }) => {
         if (error) {
             callback('Unable to connect to location service!', undefined)
         } else if (body.features.length === 0) {
