@@ -49,11 +49,11 @@ weatherForm.addEventListener('submit', (e) => {
                 time.textContent = current_time.toUTCString().slice(17, 29)
                 temp.textContent = data.location.current.temp + '°C'
 
-                wind_speed.textContent = data.location.current.wind_speed + 'm/sec'
-                app_humidity.textContent = data.location.current.humidity + '%'
+                wind_speed.textContent = data.location.current.wind_speed + ' m/sec'
+                app_humidity.textContent = data.location.current.humidity + ' %'
 
-                clouds.textContent = data.location.current.clouds + '%'
-                visibility.textContent = data.location.current.visibility + 'm'
+                clouds.textContent = data.location.current.clouds + ' %'
+                visibility.textContent = data.location.current.visibility + ' m'
 
                 const sunrise_time = new Date((data.location.current.sunrise + data.location.timezone_offset) * 1000)
                 const sunset_time = new Date((data.location.current.sunset + data.location.timezone_offset) * 1000)
@@ -114,13 +114,13 @@ weatherForm.addEventListener('submit', (e) => {
                 $('#wicon-7').attr('src', iconurl);
 
                 //7 Days forecast values 
-                temp_1.textContent = data.location.daily[1].temp.day
-                temp_2.textContent = data.location.daily[2].temp.day
-                temp_3.textContent = data.location.daily[3].temp.day
-                temp_4.textContent = data.location.daily[4].temp.day
-                temp_5.textContent = data.location.daily[5].temp.day
-                temp_6.textContent = data.location.daily[6].temp.day
-                temp_7.textContent = data.location.daily[7].temp.day
+                temp_1.textContent = data.location.daily[1].temp.day + ' °C'
+                temp_2.textContent = data.location.daily[2].temp.day + ' °C'
+                temp_3.textContent = data.location.daily[3].temp.day + ' °C'
+                temp_4.textContent = data.location.daily[4].temp.day + ' °C'
+                temp_5.textContent = data.location.daily[5].temp.day + ' °C'
+                temp_6.textContent = data.location.daily[6].temp.day + ' °C'
+                temp_7.textContent = data.location.daily[7].temp.day + ' °C'
 
             }
         })
